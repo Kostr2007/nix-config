@@ -14,6 +14,10 @@
       ./shell.nix
     ];
 
+  programs.fish.shellAbbrs = { 
+    nrs = "sudo nixos-rebuild switch"; 
+    }
+
   # Bootloader.
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
@@ -78,16 +82,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  # environment.systemPackages = with pkgs; [
-  # 	vscode
-	# git
-	# alacritty
-	# gcc
-	# gnumake
-  # ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
