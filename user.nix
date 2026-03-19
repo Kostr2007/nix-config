@@ -7,6 +7,4 @@
     extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
     shell = pkgs.fish;
   };
-
-  programs.fish.enable = true;
 }
