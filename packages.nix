@@ -10,6 +10,7 @@
     fastfetch
     gcc
     gnumake
+    gh
   ];
 
   programs.direnv = {

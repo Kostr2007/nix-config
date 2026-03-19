@@ -16,7 +16,7 @@
 
   programs.fish.shellAbbrs = { 
     nrs = "sudo nixos-rebuild switch"; 
-    }
+    };
 
   # Bootloader.
   boot.loader.grub.enable = true;
