@@ -11,6 +11,7 @@
       ./packages.nix
       ./user.nix
       ./desktop.nix
+      ./shell.nix
     ];
 
   # Bootloader.
