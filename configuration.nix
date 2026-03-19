@@ -11,14 +11,17 @@
       ./packages.nix
       ./user.nix
       ./desktop.nix
-      ./shell.nix
+      ./network.nix
     ];
 
-  programs.fish.shellAbbrs = { 
-    nrs = "sudo nixos-rebuild switch"; 
-    };
+  programs.fish.shellAbbrs = {
+  nrs = "sudo nixos-rebuild switch";
+  gcm = "sudo git commit -m";
+  gp  = "sudo git push";
+  gs  = "sudo git status";
+};
     
-  programs.fish.enable = true
+  programs.fish.enable = true;
 
   # Bootloader.
   boot.loader.grub.enable = true;
